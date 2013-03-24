@@ -1,0 +1,219 @@
+%%% Yiguang Lu CV-ENG Template
+%%%
+%%% Date: March 2013
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Document properties and packages
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass[a4paper,12pt,final]{memoir}
+
+% misc
+\renewcommand{\familydefault}{bch}	% font
+\pagestyle{empty}					% no pagenumbering
+\setlength{\parindent}{0pt}			% no paragraph indentation
+\setlength{\parskip}{0pt}
+\linespread{1.4}
+
+% required packages
+\usepackage[hmargin=1.25cm, vmargin=2.0cm]{geometry}   % margins
+\usepackage{url}									 % URLs
+\usepackage{hyperref}
+\usepackage[usenames,dvipsnames]{xcolor}				 % color
+\usepackage{fontspec,xltxtra,xunicode}
+\usepackage{multicol}								 % columns env.
+  \setlength{\multicolsep}{0pt}
+\usepackage{paralist}								 % compact lists
+\usepackage{engord}
+
+% for Chinese
+\XeTeXlinebreaklocale "zh"
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Commands from fontspec
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\defaultfontfeatures{Mapping=tex-text}
+\newfontfamily \brandonfont{Heiti SC Light}
+\newfontfamily \oslenfont{Microsoft YaHei}
+\newfontfamily \gillfont{Microsoft YaHei}
+
+\newcommand \redcolor{\color{Cerulean}}
+\newcommand \graycolor{\color{Gray}}
+\newcommand \blackcolor{\color{Black}}
+
+\newcommand \brandonred{\brandonfont\redcolor}
+\newcommand \brandongray{\brandonfont\graycolor}
+\newcommand \brandonblack{\brandonfont\blackcolor}
+
+\newcommand \oslenred{\oslenfont\redcolor}
+\newcommand \oslengray{\oslenfont\graycolor}
+\newcommand \oslenblack{\oslenfont\blackcolor}
+
+\newcommand \gillred{\gillfont\redcolor}
+\newcommand \gillgray{\gillfont\graycolor}
+\newcommand \gillblack{\gillfont\blackcolor}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Define macros (for convience)
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\CVContactKey}[1]
+{\small\brandonred\textbf{#1}}
+
+\newcommand{\CVContactValue}[1]
+	{\small\brandonblack{#1}}
+
+\newcommand{\CVSection}[1]
+	{\small\brandonred\textbf{#1}\\[6pt]}
+
+\newcommand{\CVSkill}[1]
+	{\scriptsize\brandonblack{>>\quad #1}\\[8pt]}
+
+\newcommand{\CVAward}[1]
+	{\CVSkill{#1}}
+
+\newcommand{\CVExam}[1]
+	{\CVSkill{#1}}
+
+\newcommand{\CVRightTime}[1]
+	{\small\oslenblack\textbf{#1}}
+
+\newcommand{\CVRightTitle}[1]
+	{\CVRightTime{#1}}
+
+\newcommand{\CVRightSubtitle}[1]
+	{\footnotesize\oslengray{#1}}
+
+\newcommand{\CVRightMain}[1]
+	{\scriptsize\oslenblack{#1}}
+
+\newcommand{\CVEducationSection}[1]
+	{\footnotesize\oslenblack\textbf{#1}}
+
+\newcommand{\CVExperienceIntro}[1]
+	{\CVRightMain{\textbf{#1}}\\[8pt]}
+
+\newcommand{\CVExperienceAdvisor}[1]
+	{\CVExperienceIntro{Advisor: #1}}
+
+\newcommand{\CVExperienceItem}[1]
+	{\CVRightMain{{\redcolor$\circ$}\quad {#1}}\\[4pt]}
+
+\newcommand{\CVRightNumber}[1]
+	{\footnotesize\brandonblack\textbf{#1}}
+
+\newcommand{\CVUpdateDate}[1]
+	{\scriptsize\brandonblack{#1}\\}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Begin document
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+% First column
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{minipage}[t]{0.62\textwidth}
+  \begin{flushleft}
+    \vspace{0pt}
+    \gillfont\Huge{鲁倚光}\\[-4pt]
+    \brandongray\normalsize{软件开发}
+    \\[21pt]
+  \end{flushleft}
+  % Education
+  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  \CVSection{教育程度}
+  \begin{tabular}{@{}ll@{}}
+    \CVRightTime{2009--现今} & \CVRightTitle{同济大学软件学院，软件工程专业}\\[-4pt]
+                                & \CVRightSubtitle{软件工程学士}\\
+  \end{tabular}
+  \\[10pt]
+  \CVEducationSection{在校学习课程}\\[-10pt]
+  \CVRightMain{}
+  \begin{multicols}{3}
+    \begin{compactitem}[\color{Cerulean}$\circ$]
+    \item 离散数学
+    \item 线性代数
+
+    \item C语言程序设计
+    \item 面向对象程序设计
+
+    \item 算法与数据结构
+    \item 算法分析与设计
+
+    \item 操作系统
+    \item Linux程序设计
+
+    \item 计算机网络
+    \item 计算机组成原理
+
+    \item 数据库原理与设计
+    \item 软件工程
+
+    \item 软件架构与设计模式
+    \item 计算机体系结构
+    \end{compactitem}
+  \end{multicols}
+  \mbox{}\\[13pt]
+  % Experience
+  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  \CVSection{学习、实习、就业经历}
+  % Internship, BMW
+  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  \begin{tabular}{@{}ll@{}}
+    \CVRightTime{2012.4--2013.5} & \CVRightTitle{宝马中国，上海互联驾驶实验室}\\[-6pt]
+                                 & \CVRightSubtitle{软件开发实习生}\\
+  \end{tabular}
+  \\[10pt]
+  \CVExperienceIntro{在宝马互联驾驶实验室实习的过程中，我得到了很多团队协作相关的经验，也学到了很多解决问题的方法。}
+  \CVExperienceItem{曾参与{\redcolor{GEVINI}}在Android上的实现Demo的开发。} 
+  \CVExperienceItem{给{\redcolor{KaFAS}}以策略优化、bug修复，并为其做一些性能测试。}
+    \CVExperienceItem{在{\redcolor{KaFAS}}路测的过程中收集、整理并分析测试数据。}
+  \\[13pt]
+  % Tilt
+  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  \begin{tabular}{@{}ll@{}}
+    \CVRightTime{2011.11--2012.1} & \CVRightTitle{\href{http://github.com/lukmy/tilt}{Tilt}， 同济大学，课程项目}\\
+                                  & \CVRightSubtitle{项目组长，主要贡献者}\\
+  \end{tabular}
+  \\[10pt]
+  \CVExperienceIntro{Tilt是个基于Git思想设计的版本控制系统，可以用来管理项目源码，控制项目进度。}
+  \CVExperienceItem{主要负责软件架构的设计和基本源码的实现。}
+  \CVExperienceItem{开始使用C来实现，后来改用C++和Boost对源码进行重写。}
+  \CVExperienceItem{此项目是{\redcolor{软件工程课程}}和{\redcolor{Linux程序设计课程}}的课程项目。} \\[13pt]
+  % Tilt
+  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  \begin{tabular}{@{}ll@{}}
+    \CVRightTime{2011.6--2011.11} & \CVRightTitle{3D CubeCube，同济大学，谷歌俱乐部}\\
+                                  & \CVRightSubtitle{主要贡献者}\\
+  \end{tabular}
+  \\[10pt]
+  \CVExperienceIntro{3D CubeCube是一个有挑战性的三维四子棋游戏。}
+  \CVExperienceItem{此程序参加了2011年谷歌大学生Android应用挑战赛，获得上海赛区预赛三等奖。}
+  \CVExperienceItem{完成应用设计AI部分代码，使用了位运算加速解决方案的推导。}
+\end{minipage}
+\hfill
+% Second column
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{minipage}[t]{0.32\textwidth}
+  \vspace{51pt}
+  \begin{tabular}{@{}ll@{}}
+    \CVContactKey{联系电话} & \CVContactValue{(86)186-9216-5516}\\[-1pt]
+    \CVContactKey{电子邮件} & \CVContactValue{\href{mailto:lukmylyg@gmail.com}{lukmylyg@gmail.com}}\\[-1pt]
+    \CVContactKey{GitHub} & \CVContactValue{\href{http://github.com/lukmy}{github.com/lukmy}}\\[-1pt]
+  \end{tabular} 
+  \\[33pt]
+  % Skills
+  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  \CVSection{掌握技巧}
+  \CVSkill{超过两年的{\redcolor{Linux}}使用和管理经验，使用熟悉过{\redcolor{Ubuntu}}、{\redcolor{Arch}}、{\redcolor{Gentoo}}等发行版。}
+  \CVSkill{大约三年的{\redcolor{Vim}}使用经历，重度Vim使用者，知道一些{\redcolor{Vim Script}}，同时也使用{\redcolor{Sublime Text}}。}
+  \CVSkill{比较好的掌握一些{\redcolor{Git}}的使用技巧，曾经尝试过从头实现Git。}
+  \CVSkill{比较了解一些诸如{\redcolor{C}}、{\redcolor{Java}}、{\redcolor{C++}}、{\redcolor{Pascal}}的编译语言。能够比较好的使用{\redcolor{STL}}和{\redcolor{Boost}}完成一些工作。}
+  \CVSkill{对于诸如{\redcolor{Ruby}}、{\redcolor{Perl}}、{\redcolor{Python}}、{\redcolor{Shell Script}}的脚本语言有一些基本的认识。}
+  \CVSkill{粗浅的知道一些{\redcolor{\LaTeX{}}}。}
+  \CVSkill{有一些{\redcolor{Android}}开发的经验。}\\[17pt]
+  % Awards
+  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  \CVSection{获得奖项}
+  \CVAward{(2012.7) 2012年英特尔杯全国大学生嵌入式挑战赛，决赛三等奖。}
+  \CVAward{(2011.9) 2011年谷歌大学生Android应用开发挑战赛，上海赛区预赛三等奖。}
+  \CVAward{(2007.9) 全国青少年信息学奥林匹克信息大赛，湖南赛区一等奖。}
+\end{minipage} 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% End document
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\end{document}
