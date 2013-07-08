@@ -1,3 +1,4 @@
+%%!TEX encoding = UTF-8 Unicode
 %%% Yiguang Lu CV-ENG Template
 %%%
 %%% Date: March 2013
@@ -35,7 +36,7 @@
 \newfontfamily \oslenfont{Microsoft YaHei}
 \newfontfamily \gillfont{Microsoft YaHei}
 
-\newcommand \redcolor{\color{Cerulean}}
+\newcommand \redcolor{\color{BrickRed}}
 \newcommand \graycolor{\color{Gray}}
 \newcommand \blackcolor{\color{Black}}
 
@@ -106,90 +107,78 @@
 \begin{document}
 % First column
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{minipage}[t]{0.62\textwidth}
+\begin{minipage}[t]{0.63\textwidth}
   \begin{flushleft}
     \vspace{0pt}
-    \gillfont\Huge{鲁倚光}\\[-4pt]
-    \brandongray\normalsize{软件开发}
+    \gillfont\Huge{鲁倚光}\\[-1pt]
+    \brandongray\normalsize{软件开发工程师}
     \\[21pt]
   \end{flushleft}
   % Education
   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
   \CVSection{教育程度}
   \begin{tabular}{@{}ll@{}}
-    \CVRightTime{2009--现今} & \CVRightTitle{同济大学软件学院，软件工程专业}\\[-4pt]
-                                & \CVRightSubtitle{软件工程学士}\\
+    \CVRightTime{2009.09 -- 2013.07} & \CVRightTitle{同济大学软件学院，软件工程}\\[-4pt]
+                                & \CVRightSubtitle{工学学士}\\
   \end{tabular}
-  \\[10pt]
-  \CVEducationSection{在校学习课程}\\[-10pt]
-  \CVRightMain{}
-  \begin{multicols}{3}
-    \begin{compactitem}[\color{Cerulean}$\circ$]
-    \item 离散数学
-    \item 线性代数
-
-    \item C语言程序设计
-    \item 面向对象程序设计
-
-    \item 算法与数据结构
-    \item 算法分析与设计
-
-    \item 操作系统
-    \item Linux程序设计
-
-    \item 计算机网络
-    \item 计算机组成原理
-
-    \item 数据库原理与设计
-    \item 软件工程
-
-    \item 软件架构与设计模式
-    \item 计算机体系结构
-    \end{compactitem}
-  \end{multicols}
-  \mbox{}\\[13pt]
+  \\[16pt]
   % Experience
   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-  \CVSection{学习、实习、就业经历}
+  \CVSection{实习经历}
   % Internship, BMW
   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
   \begin{tabular}{@{}ll@{}}
-    \CVRightTime{2012.4--2013.5} & \CVRightTitle{宝马中国，上海互联驾驶实验室}\\[-6pt]
-                                 & \CVRightSubtitle{软件开发实习生}\\
+    \CVRightTime{2012.04 -- 2013.06} & \CVRightTitle{宝马（中国）上海互联驾驶研究院}\\
   \end{tabular}
-  \\[10pt]
-  \CVExperienceIntro{在宝马互联驾驶实验室实习的过程中，我得到了很多团队协作相关的经验，也学到了很多解决问题的方法。}
-  \CVExperienceItem{给行车辅助系统以策略优化、bug修复，并为其做一些性能测试。}
-  \CVExperienceItem{在行车辅助系统路测的过程中收集、整理并分析测试数据。}
-  \CVExperienceItem{曾参与{\redcolor{GENIVI}}在Android上的实现Demo的开发。} 
-  \\[13pt]
+  \\[8pt]
+  \CVExperienceItem{使用{\redcolor{C}}、{\redcolor{C++}}和{\redcolor{Python}}，负责行车辅助系统的开发、维护及测试。}
+  \CVExperienceItem{参与分析、设计行车辅助系统执行策略，以及实现策略和验证策略有效性，给出相应评估。}
+  \CVExperienceItem{参与多个实验性{\redcolor{Android}}项目开发。负责其中整个模块的具体实现。} 
+  \CVExperienceItem{在行车辅助系统路测的过程中收集、整理并分析测试数据，生成数据对照表。}
+
+  \CVSection{项目经历}
   % Tilt
   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
   \begin{tabular}{@{}ll@{}}
-    \CVRightTime{2011.11--2012.1} & \CVRightTitle{\href{http://github.com/lukmy/tilt}{Tilt}， 同济大学，课程项目}\\
-                                  & \CVRightSubtitle{项目组长，主要贡献者}\\
+    \CVRightTime{2013.05 -- 2013.07} & \CVRightTitle{基本测试框架原型，主要贡献者}\\
   \end{tabular}
-  \\[10pt]
-  \CVExperienceIntro{Tilt是个基于Git思想设计的版本控制系统，可以用来管理项目源码，控制项目进度。}
-  \CVExperienceItem{主要负责软件架构的设计和基本源码的实现。}
-  \CVExperienceItem{开始使用C来实现，后来改用C++和Boost对源码进行重写。}
-  \CVExperienceItem{此项目是{\redcolor{软件工程课程}}和{\redcolor{Linux程序设计课程}}的课程项目。} \\[13pt]
+  \\[8pt]
+  \CVExperienceIntro{本项目是一个基本测试框架原型，通过上传不同的配置脚本来进行不同内容的测试。}
+  \CVExperienceItem{负责软件架构的设计和基本源码的实现。}
+  \CVExperienceItem{使用{\redcolor{Python}}编写，使用{\redcolor{Web.py}}做后端。至今仍在开发维护中。} \\
   % Tilt
   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
   \begin{tabular}{@{}ll@{}}
-    \CVRightTime{2011.6--2011.11} & \CVRightTitle{3D CubeCube，同济大学，谷歌俱乐部}\\
-                                  & \CVRightSubtitle{主要贡献者}\\
+    \CVRightTime{2012.04 -- 2012.07} & \CVRightTitle{一路同行，主要贡献者} \\
   \end{tabular}
-  \\[10pt]
-  \CVExperienceIntro{3D CubeCube是一个有挑战性的三维四子棋游戏。}
-  \CVExperienceItem{此程序参加了2011年谷歌大学生Android应用挑战赛，获得上海赛区预赛三等奖。}
-  \CVExperienceItem{完成应用设计AI部分代码，使用了位运算加速解决方案的推导。}
+  \\[8pt]
+  \CVExperienceIntro{一路同行是一个驾驶辅助系统，通过在驾驶过程中收集驾驶员脑波，分析其精神集中状况，来判断其是否适合驾驶。}
+  \CVExperienceItem{负责软件部分的实现，使用{\redcolor{C\#}}编写。}
+  \CVExperienceItem{项目获得2012年英特尔杯全国大学生嵌入式挑战赛决赛三等奖。}\\
+  % Tilt
+  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  \begin{tabular}{@{}ll@{}}
+    \CVRightTime{2011.11 -- 2012.01} & \CVRightTitle{\href{http://github.com/lukmy/tilt}{Tilt}，项目组长，主要贡献者}\\
+  \end{tabular}
+  \\[8pt]
+  \CVExperienceIntro{Tilt是一个版本控制系统。基于Git思想设计，用于管理项目源码，控制项目进度。}
+  \CVExperienceItem{负责软件架构的设计和基本源码的实现。}
+  \CVExperienceItem{项目分别有{\redcolor{C}}，{\redcolor{C++}}/{\redcolor{Boost}}和{\redcolor{Ruby}}的实现。} \\
+  % Tilt
+  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  \begin{tabular}{@{}ll@{}}
+    \CVRightTime{2011.06 -- 2011.11} & \CVRightTitle{3D CubeCube，主要贡献者} 
+  \end{tabular}
+  \\[8pt]
+  \CVExperienceIntro{3D CubeCube是一个有挑战性的{\redcolor{Android}}平台三维四子棋游戏。}
+  \CVExperienceItem{负责设计并实现AI部分代码，使用了位运算加速解决方案的推导。}
+  \CVExperienceItem{项目获得2011年谷歌大学生Android应用挑战赛区域三等奖。} \\
 \end{minipage}
 \hfill
 % Second column
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{minipage}[t]{0.32\textwidth}
-  \vspace{51pt}
+  \vspace{54pt}
   \begin{tabular}{@{}ll@{}}
     \CVContactKey{联系电话} & \CVContactValue{(86)186-9216-5516}\\[-1pt]
     \CVContactKey{电子邮件} & \CVContactValue{\href{mailto:lukmylyg@gmail.com}{lukmylyg@gmail.com}}\\[-1pt]
@@ -199,19 +188,20 @@
   % Skills
   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
   \CVSection{掌握技巧}
-  \CVSkill{超过两年的{\redcolor{Linux}}使用和管理经验，使用熟悉过{\redcolor{Ubuntu}}、{\redcolor{Arch}}、{\redcolor{Gentoo}}等发行版。}
-  \CVSkill{大约三年的{\redcolor{Vim}}使用经历，重度Vim使用者，知道一些{\redcolor{Vim Script}}，同时也使用{\redcolor{Sublime Text}}。}
-  \CVSkill{比较好的掌握一些{\redcolor{Git}}的使用技巧，曾经尝试过从头实现Git。}
-  \CVSkill{比较了解一些诸如{\redcolor{C}}、{\redcolor{Java}}、{\redcolor{C++}}、{\redcolor{Pascal}}的编译语言。能够比较好的使用{\redcolor{STL}}和{\redcolor{Boost}}完成一些工作。}
-  \CVSkill{对于诸如{\redcolor{Ruby}}、{\redcolor{Perl}}、{\redcolor{Python}}、{\redcolor{Shell Script}}的脚本语言有一些基本的认识。接触过框架诸如{\redcolor{Web.py}}，{\redcolor{DSL}}诸如{\redcolor{Rails}}、{\redcolor{Sinatra}}。}
-  \CVSkill{粗浅的知道一些{\redcolor{\LaTeX{}}}。}
-  \CVSkill{有一些{\redcolor{Android}}开发的经验。}\\[17pt]
-  % Awards
-  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-  \CVSection{获得奖项}
-  \CVAward{(2012.7) 2012年英特尔杯全国大学生嵌入式挑战赛，决赛三等奖。}
-  \CVAward{(2011.9) 2011年谷歌大学生Android应用开发挑战赛，上海赛区预赛三等奖。}
-  \CVAward{(2007.9) 全国青少年信息学奥林匹克信息大赛，湖南赛区一等奖。}
+  \CVSkill{超过两年{\redcolor{Linux}}使用和管理经验，熟悉多个Linux发行版，比较熟悉{\redcolor{Shell Script}}，  熟练使用{\redcolor{Git}}。}
+  \CVSkill{精通{\redcolor{C}}和{\redcolor{C++}}，有较多{\redcolor{Boost}}和{\redcolor{STL}}使用经验。}
+  \CVSkill{比较熟悉{\redcolor{Java}}和{\redcolor{Android}}。}  
+  \CVSkill{有良好的算法基础，具有解决算法问题的能力。}
+  \CVSkill{熟悉{\redcolor{Ruby}}、{\redcolor{Python}}和{\redcolor{Perl}}等脚本语言，{\redcolor{Web.py}}、{\redcolor{Rails}}和{\redcolor{Sinatra}}等{\redcolor{DSL}}和框架。}
+  \CVSkill{熟悉{\redcolor{MarkDown}}、{\redcolor{Textile}}和{\redcolor{Re-StructuredText}}等标记语言，{\redcolor{Sphinx}}等文档生成工具。}
+  \CVSkill{熟练使用{\redcolor{Vim}}和{\redcolor{Sublime Text}}，熟悉{\redcolor{Vim Script}}。}
+  \CVSkill{熟练使用{\redcolor{\LaTeX{}}}。}
+
+  \CVSection{社会经历}
+  \CVAward{大三下期，在同济大学软件学院课程《Linux程序设计》中，担任助教。}
+  \CVAward{在同济大学Google Camp担任主要负责人，参与组织企业合作。}
+  \CVAward{高二上期，参加全国青少年信息学奥林匹克信息大赛，获湖南赛区一等奖及大学保送资格。}
+  %\CVAward{<++>}
 \end{minipage} 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % End document
