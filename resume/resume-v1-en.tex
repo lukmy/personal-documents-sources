@@ -1,6 +1,6 @@
-%%% Zichuan Wang CV Template
+%%% Yiguang Lu CV-ENG Template
 %%%
-%%% Date: October 2012
+%%% Date: March 2013
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Document properties and packages
@@ -21,7 +21,7 @@
 \usepackage[usenames,dvipsnames]{xcolor}				 % color
 \usepackage{fontspec,xltxtra,xunicode}
 \usepackage{multicol}								 % columns env.
-	\setlength{\multicolsep}{0pt}
+  \setlength{\multicolsep}{0pt}
 \usepackage{paralist}								 % compact lists
 \usepackage{engord}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -32,7 +32,7 @@
 \newfontfamily \oslenfont{Olsen}
 \newfontfamily \gillfont{Gill Sans}
 
-\newcommand \redcolor{\color{Bittersweet}}
+\newcommand \redcolor{\color{BrickRed}}
 \newcommand \graycolor{\color{Gray}}
 \newcommand \blackcolor{\color{Black}}
 
@@ -101,116 +101,102 @@
 % Begin document
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{document}
-% First Page
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % First column
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-	\begin{minipage}[t]{0.62\textwidth}
-      \begin{flushleft}
-        \vspace{0pt}
-        \gillfont\Huge{Yiguang Lu}\\[-4pt]
-        \brandongray\normalsize{Developer}
-        \\[21pt]
-      \end{flushleft}
-% Education
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-	\CVSection{EDUCATION}
-		\begin{tabular}{@{}ll@{}}
-		\CVRightTime{2009--present} & \CVRightTitle{Tongji University, Shanghai, China.}\\[-4pt]
-		& \CVRightSubtitle{Bachelor of Engineering in Software Engineering}\\
-		\end{tabular}
-	\\[10pt]
-%	\CVEducationSection{GPA}\\[5pt]
-%	\CVRightMain{Major: {\CVRightNumber{{\redcolor{3.49}} / 4}}\quad Overall: {\CVRightNumber{{\redcolor{3.39}} / 4}} (Top {\CVRightNumber{10\%}})}\\[10pt]
-	\CVEducationSection{Major Courses}\\[-10pt]
-	\CVRightMain{}
-		\begin{multicols}{2}
-			\begin{compactitem}[\color{Bittersweet}$\circ$]
-			\item Discrete Mathematics
-			\item Linear Algebra
-
-			\item C Programming
-			\item Object-Oriented Programming
-
-			\item Data Structure and Algorithm
-			\item Algorithm Analysis and Design 
-
-			\item Operating Systems
-            \item Linux Programming
-
-			\item Computer Network
-			\item Computer Organization
-
-			\item Principle of Database and Applications
-			\item Software Engineering
-
-			\item Software Architecture and Design Pattern
-			\item Computer Architecture 
-			\end{compactitem}
-		\end{multicols}
-	\mbox{}\\[13pt]
-% Experience
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\CVSection{EXPERIENCE}
-% Internship, tencent
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-		\begin{tabular}{@{}ll@{}}
-		\CVRightTime{2012.4--2013.5} & \CVRightTitle{Connected Drive Lab, BMW China.}\\[-6pt]
-& \CVRightSubtitle{Software Development Engineer, Intern.}\\
-		\end{tabular}
-	\\[10pt]
-	\CVExperienceIntro{Working at Connected Drive Lab (CDL) provides me with experience in working with teams and resolving problems from umfamiliar software systems.}
-    \CVExperienceItem{Optimized, gave bug fixes, and made basic regression tests for {\redcolor{KaFAS}}.}
-    \CVExperienceItem{Colleted, sorted out and analyzed data of test-drive for {\redcolor{KaFAS}}.}
-    \CVExperienceItem{Made contribution to {\redcolor{GEVINI Demo}} implementation on Android.} 
-    \\[13pt]
-% WeTongji
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-		\begin{tabular}{@{}ll@{}}
-		\CVRightTime{2011.11--2012.1} & \CVRightTitle{\href{http://github.com/lukmy/tilt}{Tilt}, Tongji University.}\\
-		& \CVRightSubtitle{Leader and Main Contributer}\\
-		\end{tabular}
-	\\[10pt]
-    \CVExperienceIntro{Tilt is a git-based command line Version Control System (VCS), it can manage commit history of source code.}
-    \CVExperienceItem{Designed the basic architecture of the program.}
-    \CVExperienceItem{Implemented the program using {\redcolor{C}} first, then refacoried it using {\redcolor{C++}}, {\redcolor{Boost}}.}
-    \CVExperienceItem{It's the course project of Linux Programing and Software Engineering.} \\[13pt]
-		\begin{tabular}{@{}ll@{}}
-		\CVRightTime{2011.6--2011.11} & \CVRightTitle{3D CubeCube, Tongji Google Camp.}\\
-		& \CVRightSubtitle{Main Contributer}\\
-		\end{tabular}
-	\\[10pt]
-    \CVExperienceIntro{3D CubeCube is a 3D four-in-a-row Android Game, it could be a challenging work.}
-    \CVExperienceItem{Took part in Android Application Development Challenge of Chinese College Students in 2011, and won the Third Prize in Shanghai Area.}
-    \CVExperienceItem{Finished the AI part, used bit operation to accelerate computing.}
-	\end{minipage}
-    \hfill
+\begin{minipage}[t]{0.63\textwidth}
+  \begin{flushleft}
+    \vspace{0pt}
+    \gillfont\Huge{Yiguang Lu}\\[-4pt]
+    \brandongray\normalsize{Software Development Engineer}
+    \\[21pt]
+  \end{flushleft}
+  % Education
+  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  \CVSection{EDUCATION}
+  \begin{tabular}{@{}ll@{}}
+    \CVRightTime{2009.9--2013.7} & \CVRightTitle{Tongji University, Shanghai, China.}\\[-4pt]
+                                & \CVRightSubtitle{Bachelor of Engineering in Software Engineering}\\
+  \end{tabular}
+  \\[10pt]
+  % Experience
+  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  \CVSection{INTERNSHIP}
+  % Internship, BMW
+  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  \begin{tabular}{@{}ll@{}}
+    \CVRightTime{2012.4--2013.6} & \CVRightTitle{Connected Drive Lab, BMW China.}\\[-6pt]
+  \end{tabular}
+  \\[10pt]
+  \CVExperienceItem{Responsable for developing and testing for Driving Assistance System using {\redcolor{C}}, {\redcolor{C++}} and {\redcolor{Python}}.}
+  \CVExperienceItem{Collected, sorted out and analyzed data of test-drive for Driving Assistance System.}
+  \CVExperienceItem{Contributed to several experimental {\redcolor{Android}} projects.} 
+  \\
+  \CVSection{PROJECTS}
+  % Tilt
+  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  \begin{tabular}{@{}ll@{}}
+    \CVRightTime{2011.11--2012.1} & \CVRightTitle{\href{http://github.com/lukmy/tilt}{Tilt}, Leader and Main Contributer}\\
+  \end{tabular}
+  \\[10pt]
+  \CVExperienceIntro{Tilt is a git-based command line Version Control System (VCS) which manages commit history of source code.}
+  \CVExperienceItem{Designed the basic architecture of the program.}
+  \CVExperienceItem{Implemented the program using {\redcolor{C}}, {\redcolor{C++}}/{\redcolor{Boost}} and {\redcolor{Ruby}} respectively.} \\
+  % Tilt
+  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  \begin{tabular}{@{}ll@{}}
+    \CVRightTime{2011.6--2011.11} & \CVRightTitle{3D CubeCube, Main Contributer.}\\
+  \end{tabular}
+  \\[10pt]
+  \CVExperienceIntro{3D CubeCube is a 3D four-in-a-row Android Game, it could be a challenging work.}
+  \CVExperienceItem{Finished the AI part, used bit operation to accelerate computing.}
+  \CVExperienceItem{Took part in Android Application Development Challenge of Chinese College Students by Google in 2011, and won the Third Prize in Shanghai Area.}
+  % Tilt
+  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  \begin{tabular}{@{}ll@{}}
+    \CVRightTime{2013.5--2013.7} & \CVRightTitle{TestFrameworkProto, Main Contributer}\\
+  \end{tabular}
+  \\[10pt]
+  \CVExperienceIntro{This is a prototype for test framework, it will run different kind of tests based on different formulas.}
+  \CVExperienceItem{Designed the basic architecture of the program and implemented the most code.}
+  \CVExperienceItem{Used {\redcolor{Python}} as programming language, {\redcolor{Web.py}} as framework.} \\
+  % Tilt
+  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  \begin{tabular}{@{}ll@{}}
+    \CVRightTime{2013.5--2013.7} & \CVRightTitle{Safe Go, Main Contributer}\\
+  \end{tabular}
+  \\[10pt]
+  \CVExperienceIntro{Safe Go is a Driving Assistance System for judging the spirit status of driver by collecting and analyzing his brain wave.}
+  \CVExperienceItem{Implemented the software part by {\redcolor{C\#}}.}
+  \CVExperienceItem{Took part in College Competition of Embedded by Intel in 2012, and won \engordnumber{3} Prize in final.}\\
+\end{minipage}
+\hfill
 % Second column
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-	\begin{minipage}[t]{0.32\textwidth}
-	\vspace{51pt}
-		\begin{tabular}{@{}ll@{}}
-          \CVContactKey{Tel.} & \CVContactValue{(86)186-9216-5516}\\[-1pt]
-          \CVContactKey{E-mail} & \CVContactValue{\href{mailto:lukmylyg@gmail.com}{lukmylyg@gmail.com}}\\[-1pt]
-		\CVContactKey{GitHub} & \CVContactValue{\href{http://github.com/lukmy}{github.com/lukmy}}\\[-1pt]
-        \end{tabular} 
-	\\[33pt]
-% Skills
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-	\CVSection{SKILLS}
-    \CVSkill{Over 2 years of experience using and managing {\redcolor{Linux}}, used distributions like {\redcolor{Ubuntu}}, {\redcolor{Arch Linux}}, {\redcolor{Gentoo}}, etc}
-    \CVSkill{About 3 years of experience using {\redcolor{Vim}}, Severe Vim User, know well about {\redcolor{Vim Script}}, also used {\redcolor{Sublime Text}}}
-	\CVSkill{Extensive knowledge of {\redcolor{Git}}, used to implement Git from the beginning}
-    \CVSkill{Well known of many compiled languages including {\redcolor{C/C++}}, {\redcolor{Java}}, {\redcolor{Pascal}}, etc. Could use {\redcolor{STL}} and {\redcolor{Boost}} to do some job}
-    \CVSkill{Basic knowledge of some scripting languages like {\redcolor{Ruby}}, {\redcolor{Perl}}, {\redcolor{Python}}, {\redcolor{Shell Script}}, etc}
-    \CVSkill{Shallow understanding of {\redcolor{\LaTeX{}}}}
-    \CVSkill{Little experience about {\redcolor{Android}} Development}\\[17pt]
-% Awards
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-	\CVSection{AWARDS}
-	\CVAward{Intel Cup, College Competition of Embedded, \engordnumber{3} Prize in final, Intel, Inc. (2012.7)}
-	\CVAward{Android Application Development College Challenge, \engordnumber{3} Prize in Shanghai Area ({\redcolor{\%10}}), Google, Inc. (2011.9)}
-    \CVAward{Nation Olympiad in Informatics in Provinces, Hunan, \engordnumber{1} Prize, China Computer Federation. (2007.9)}
+\begin{minipage}[t]{0.32\textwidth}
+  \vspace{51pt}
+  \begin{tabular}{@{}ll@{}}
+    \CVContactKey{Tel.} & \CVContactValue{(86)186-9216-5516}\\[-1pt]
+    \CVContactKey{E-mail} & \CVContactValue{\href{mailto:lukmylyg@gmail.com}{lukmylyg@gmail.com}}\\[-1pt]
+    \CVContactKey{GitHub} & \CVContactValue{\href{http://github.com/lukmy}{github.com/lukmy}}\\[-1pt]
+  \end{tabular} 
+  \\[33pt]
+  % Skills
+  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  \CVSection{SKILLS}
+  \CVSkill{Over 2 years experience of using and managing {\redcolor{Linux}}, used distributions like {\redcolor{Ubuntu}}, {\redcolor{Arch Linux}}, {\redcolor{Gentoo}}, etc. knowledged in {\redcolor{Shell Script}}, Expertise in {\redcolor{Git}}. }
+  \CVSkill{Expertise in {\redcolor{C}} and {\redcolor{C++}}, experenced in {\redcolor{STL}} and {\redcolor{Boost}}.}
+  \CVSkill{Experienced in {\redcolor{Java}} and {\redcolor{Android}}.}
+  \CVSkill{Extensive knowledge of Algorithms. Strong abilities of solving algorithms problems.}
+  \CVSkill{Knowledge of scripting languages like {\redcolor{Ruby}}, {\redcolor{Python}} and {\redcolor{Perl}}, framework and {\redcolor{DSL}} like {\redcolor{Web.py}}, {\redcolor{Rails}} and {\redcolor{Sinatra}}.}
+  \CVSkill{Knowledge of markup languages like {\redcolor{MarkDown}}, {\redcolor{Textile}} and {\redcolor{ReStructuredText}}, document tool like {\redcolor{Sphinx}}.}
+  \CVSkill{Experienced in using {\redcolor{Vim}} and {\redcolor{Vim Script}}, knowledged in {\redcolor{Sublime Text}}.}
+  \CVSkill{Knowledged in {\redcolor{\LaTeX{}}}.}\\[17pt]
+  % Awards
+  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  \CVSection{SOCIAL}
+  \CVAward{Been a TA for course Linux Programming in thrid grade in university.}
+  \CVAward{Been a major person in charge of Google Camp in Tongji University, took part in Enterprise Communication.}
+  \CVAward{In 2007, Won \engordnumber{1} Prize in Nation Olympiad in Informatics in Provinces, Hunan, by China Computer Federation.}
 \end{minipage} 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % End document
