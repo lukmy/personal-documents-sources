@@ -1,0 +1,227 @@
+%%% Yiguang Lu CV-ENG Template
+%%%
+%%% Date: March 2013
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Document properties and packages
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass[a4paper,12pt,final]{memoir}
+
+% misc
+\renewcommand{\familydefault}{bch}	% font
+\pagestyle{empty}					% no pagenumbering
+\setlength{\parindent}{0pt}			% no paragraph indentation
+\setlength{\parskip}{0pt}
+\linespread{1.4}
+
+% required packages
+\usepackage[hmargin=1.25cm, vmargin=1.0cm]{geometry}   % margins
+\usepackage{url}									 % URLs
+\usepackage{hyperref}
+\usepackage[usenames,dvipsnames]{xcolor}				 % color
+\usepackage{fontspec,xltxtra,xunicode}
+\usepackage{multicol}								 % columns env.
+  \setlength{\multicolsep}{0pt}
+\usepackage{paralist}								 % compact lists
+\usepackage{engord}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Commands from fontspec
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\defaultfontfeatures{Mapping=tex-text}
+\newfontfamily \brandonfont{Brandon Grotesque}
+\newfontfamily \oslenfont{Olsen}
+\newfontfamily \gillfont{Gill Sans}
+
+\newcommand \redcolor{\color{BrickRed}}
+\newcommand \graycolor{\color{Gray}}
+\newcommand \blackcolor{\color{Black}}
+
+\newcommand \brandonred{\brandonfont\redcolor}
+\newcommand \brandongray{\brandonfont\graycolor}
+\newcommand \brandonblack{\brandonfont\blackcolor}
+
+\newcommand \oslenred{\oslenfont\redcolor}
+\newcommand \oslengray{\oslenfont\graycolor}
+\newcommand \oslenblack{\oslenfont\blackcolor}
+
+\newcommand \gillred{\gillfont\redcolor}
+\newcommand \gillgray{\gillfont\graycolor}
+\newcommand \gillblack{\gillfont\blackcolor}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Define macros (for convience)
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\CVContactKey}[1]
+{\small\brandonred\textbf{#1}}
+
+\newcommand{\CVContactValue}[1]
+	{\small\brandonblack{#1}}
+
+\newcommand{\CVSection}[1]
+	{\small\brandonred\textbf{#1}\\[6pt]}
+
+\newcommand{\CVSkill}[1]
+	{\scriptsize\brandonblack{>>\quad #1}\\[8pt]}
+
+\newcommand{\CVAward}[1]
+	{\CVSkill{#1}}
+
+\newcommand{\CVExam}[1]
+	{\CVSkill{#1}}
+
+\newcommand{\CVRightTime}[1]
+	{\small\oslenblack\textbf{#1}}
+
+\newcommand{\CVRightTitle}[1]
+	{\CVRightTime{#1}}
+
+\newcommand{\CVRightSubtitle}[1]
+	{\footnotesize\oslengray{#1}}
+
+\newcommand{\CVRightMain}[1]
+	{\scriptsize\oslenblack{#1}}
+
+\newcommand{\CVEducationSection}[1]
+	{\footnotesize\oslenblack\textbf{#1}}
+
+\newcommand{\CVExperienceIntro}[1]
+	{\CVRightMain{\textbf{#1}}\\[8pt]}
+
+\newcommand{\CVExperienceAdvisor}[1]
+	{\CVExperienceIntro{Advisor: #1}}
+
+\newcommand{\CVExperienceItem}[1]
+	{\CVRightMain{{\redcolor$\circ$}\quad {#1}}\\[4pt]}
+
+\newcommand{\CVRightNumber}[1]
+	{\footnotesize\brandonblack\textbf{#1}}
+
+\newcommand{\CVUpdateDate}[1]
+	{\scriptsize\brandonblack{#1}\\}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Begin document
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+% First column
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{minipage}[t]{0.63\textwidth}
+  \begin{flushleft}
+    \vspace{0pt}
+    \gillfont\Huge{Yiguang Lu}\\[-4pt]
+    \brandongray\normalsize{Software Development Engineer}
+    \\[21pt]
+  \end{flushleft}
+  % Education
+  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  \CVSection{EDUCATION}
+  \begin{tabular}{@{}ll@{}}
+    \CVRightTime{2009.9--2013.7} & \CVRightTitle{Tongji University, Shanghai, China.}\\[-4pt]
+                                & \CVRightSubtitle{Bachelor of Engineering in Software Engineering}\\
+  \end{tabular}
+  \\[10pt]
+  % Experience
+  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  \CVSection{WORK EXPERIENCE}
+  \begin{tabular}{@{}ll@{}}
+    \CVRightTime{2013.8--present} & \CVRightTitle{Ctrip Shanghai, System Engineer}\\[-6pt]
+  \end{tabular}
+  \\[10pt]
+  \CVExperienceIntro{Orca: Ctrip Private Cloud Platform(Based on OpenStack)}
+  \CVExperienceItem{Focus on {\redcolor{OpenStack}} Computing(Nova), in position of developing Nova VMware driver.}
+  \CVExperienceItem{Provide technical support for Ctrip Private Cloud in production.}
+  \CVExperienceItem{Take daily maintenance for Private Cloud in Ctrip QA Farm, including VMware and KVM virtual machine.}
+  \CVExperienceItem{Upgrade OpenStack from Grizzly to Icehouse.}
+  \CVExperienceItem{Use {\redcolor{SaltStack}} to install/upgrade infrastructures, develop salt state trees.}
+
+  \CVExperienceIntro{Midway: Orca API for Ctrip Remedy}
+  \CVExperienceItem{Main contributor for VM provisioning(including VMware and KVM) and hypervisor privisoning(including ESXi and KVM) module. Using {\redcolor{Python}}.}
+  \CVExperienceItem{Configure ELK(Elasticsearch, Logstash, Kibana) for midway, make clear view for error type displaying and API time spent statistics.} \\[10pt]
+  \CVSection{INTERNSHIP}
+  % Internship, BMW
+  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  \begin{tabular}{@{}ll@{}}
+    \CVRightTime{2012.4--2013.6} & \CVRightTitle{Connected Drive Lab, BMW China.}\\[-6pt]
+  \end{tabular}
+  \\[10pt]
+  \CVExperienceIntro{KaFas: Driving Assistance System}
+  \CVExperienceItem{Responsable for developing and testing for Driving Assistance System using {\redcolor{C}}, {\redcolor{C++}} and {\redcolor{Python}}.}
+  \CVExperienceItem{Collected, sorted out and analyzed data of test-drive for Driving Assistance System.}
+
+  \CVExperienceIntro{TestFrameworkProto: prototype for test framework, it will run different kind of tests based on different formulas.}
+  \CVExperienceItem{Designed the basic architecture of the program and implemented the most code.}
+  \CVExperienceItem{Used {\redcolor{Python}} as programming language, {\redcolor{Web.py}} as framework.} 
+
+  \CVExperienceIntro{Contributed to several experimental {\redcolor{Android}} projects.} 
+  \\
+  %\CVSection{PROJECTS}
+  %% Tilt
+  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  %\begin{tabular}{@{}ll@{}}
+  %  \CVRightTime{2011.11--2012.1} & \CVRightTitle{\href{http://github.com/lukmy/tilt}{Tilt}, Leader and Main Contributer}\\
+  %\end{tabular}
+  %\\[10pt]
+  %\CVExperienceIntro{Tilt is a git-based command line Version Control System (VCS) which manages commit history of source code.}
+  %\CVExperienceItem{Designed the basic architecture of the program.}
+  %\CVExperienceItem{Implemented the program using {\redcolor{C}}, {\redcolor{C++}}/{\redcolor{Boost}} and {\redcolor{Ruby}} respectively.} \\
+  %% Tilt
+  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  %\begin{tabular}{@{}ll@{}}
+  %  \CVRightTime{2011.6--2011.11} & \CVRightTitle{3D CubeCube, Main Contributer.}\\
+  %\end{tabular}
+  %\\[10pt]
+  %\CVExperienceIntro{3D CubeCube is a 3D four-in-a-row Android Game, it could be a challenging work.}
+  %\CVExperienceItem{Finished the AI part, used bit operation to accelerate computing.}
+  %\CVExperienceItem{Took part in Android Application Development Challenge of Chinese College Students by Google in 2011, and won the Third Prize in Shanghai Area.}
+  %% Tilt
+  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  %\begin{tabular}{@{}ll@{}}
+  %  \CVRightTime{2013.5--2013.7} & \CVRightTitle{TestFrameworkProto, Main Contributer}\\
+  %\end{tabular}
+  %\\[10pt]
+  %\CVExperienceIntro{This is a prototype for test framework, it will run different kind of tests based on different formulas.}
+  %\CVExperienceItem{Designed the basic architecture of the program and implemented the most code.}
+  %\CVExperienceItem{Used {\redcolor{Python}} as programming language, {\redcolor{Web.py}} as framework.} \\
+  %% Tilt
+  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  %\begin{tabular}{@{}ll@{}}
+  %  \CVRightTime{2013.5--2013.7} & \CVRightTitle{Safe Go, Main Contributer}\\
+  %\end{tabular}
+  %\\[10pt]
+  %\CVExperienceIntro{Safe Go is a Driving Assistance System for judging the spirit status of driver by collecting and analyzing his brain wave.}
+  %\CVExperienceItem{Implemented the software part by {\redcolor{C\#}}.}
+  %\CVExperienceItem{Took part in College Competition of Embedded by Intel in 2012, and won \engordnumber{3} Prize in final.}\\
+\end{minipage}
+\hfill
+% Second column
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{minipage}[t]{0.32\textwidth}
+  \vspace{51pt}
+  \begin{tabular}{@{}ll@{}}
+    \CVContactKey{Tel.} & \CVContactValue{(86)186-9216-5516}\\[-1pt]
+    \CVContactKey{E-mail} & \CVContactValue{\href{mailto:yiguang.lu@outlook.com}{yiguang.lu@outlook.com}}\\[-1pt]
+    \CVContactKey{GitHub} & \CVContactValue{\href{http://github.com/lukmy}{github.com/lukmy}}\\[-1pt]
+  \end{tabular} 
+  \\[33pt]
+  % Skills
+  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  \CVSection{SKILLS}
+  \CVSkill{Over 3 years experience of using and managing {\redcolor{Linux}}, knowledged in {\redcolor{Shell Script}}, Expertise in {\redcolor{Git}}. }
+  \CVSkill{Expertise in {\redcolor{Python}}, knowledged in {\redcolor{OpenStack}} Conponents, knowledged in Celery}
+  \CVSkill{Experienced in using configuration management tool such as {\redcolor{SaltStack}}, {\redcolor{Fabric}} and {\redcolor{Ansible}}.}
+  \CVSkill{Experienced in using {\redcolor{Vim}} and {\redcolor{Vim Script}}, knowledged in {\redcolor{Sublime Text}}.}
+  \CVSkill{Experienced in {\redcolor{Java}} and {\redcolor{Android}}.}
+  \CVSkill{Extensive knowledge of Algorithms. Strong abilities of solving algorithms problems.}
+  \CVSkill{Knowledge of markup languages like {\redcolor{MarkDown}}, {\redcolor{Textile}} and {\redcolor{ReStructuredText}}, document tool like {\redcolor{Sphinx}}.}
+  \CVSkill{Knowledge of {\redcolor{C}} and {\redcolor{C++}}, experienced in {\redcolor{STL}} and {\redcolor{Boost}}.}
+  \CVSkill{Knowledged in {\redcolor{\LaTeX{}}}.}\\[15pt]
+  % Awards
+  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  \CVSection{SOCIAL}
+  \CVAward{Won People Choice's Award in the 1st Ctrip Hackathon.}
+  \CVAward{Been a TA for course Linux Programming in thrid grade in university.}
+  \CVAward{Been a major person in charge of Google Camp in Tongji University, took part in Enterprise Communication.}
+  \CVAward{In 2007, Won \engordnumber{1} Prize in Nation Olympiad in Informatics in Provinces, Hunan, by China Computer Federation.}
+\end{minipage} 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% End document
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\end{document}

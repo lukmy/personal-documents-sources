@@ -19,4 +19,4 @@ en: resume-v1-en.tex
 	$(CC) $<
 
 clean:
-	rm *.pdf *.aux
+	rm *.aux *.out *.log
