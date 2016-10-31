@@ -64,15 +64,6 @@
 \newcommand{\CVSection}[1]
 	{\small\oslenred\textbf{#1}\\[6pt]}
 
-\newcommand{\CVSkill}[1]
-	{\scriptsize\brandonblack{>>\quad #1}\\[8pt]}
-
-\newcommand{\CVAward}[1]
-	{\CVSkill{#1}}
-
-\newcommand{\CVExam}[1]
-	{\CVSkill{#1}}
-
 \newcommand{\CVRightTime}[1]
 	{\small\oslenblack\textbf{#1}}
 
@@ -102,6 +93,18 @@
 
 \newcommand{\CVUpdateDate}[1]
 	{\scriptsize\brandonblack{#1}\\}
+
+\newcommand{\CVSkill}[1]
+	{\scriptsize\brandonblack{>>\quad #1}\\[8pt]}
+
+\newcommand{\CVAward}[1]
+	{\CVSkill{#1}}
+
+\newcommand{\CVExam}[1]
+	{\CVSkill{#1}}
+
+\newcommand{\CVSkillIntro}[1]
+    {\CVExperienceIntro{#1}}
 
 \newcommand{\BeginMajorPage}
     {\begin{minipage}[t]{0.62\textwidth}}
@@ -195,22 +198,26 @@
   % Skills
   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
   \CVSection{掌握技巧}
-  \CVSkill{超过三年{\redcolor{Linux}}使用和管理经验，熟悉多个Linux发行版，比较熟悉{\redcolor{Shell Script}}，熟练使用{\redcolor{Git}}。}
-  \CVSkill{精通{\redcolor{Python}}，熟悉{\redcolor{OpenStack}}基本组件，熟悉{\redcolor{Celery}}。}
-  \CVSkill{熟练使用{\redcolor{SaltStack}}、{\redcolor{Fabric}}和{\redcolor{Ansible}}进行配置管理。}
-  \CVSkill{熟练使用{\redcolor{Vim}}和{\redcolor{Sublime Text}}，熟悉{\redcolor{Vim Script}}。}
-  \CVSkill{比较熟悉{\redcolor{Java}}和{\redcolor{Android}}。}  
-  \CVSkill{有良好的算法基础，具有解决算法问题的能力。}
-  %\CVSkill{熟悉{\redcolor{Ruby}}和{\redcolor{Perl}}等脚本语言，{\redcolor{Web.py}}、{\redcolor{Rails}}和{\redcolor{Sinatra}}等{\redcolor{DSL}}和框架。}
-  \CVSkill{熟悉{\redcolor{MarkDown}}、{\redcolor{Textile}}和{\redcolor{Re-StructuredText}}等标记语言，{\redcolor{Sphinx}}等文档生成工具。}
+  \CVSkillIntro{编程语言及技巧}
+  \CVSkill{熟练掌握{\redcolor{Java}}，曾参与{\redcolor{Android}}项目开发。}  
+  \CVSkill{精通{\redcolor{Python}}，熟悉{\redcolor{OpenStack}}基本组件。}
+  \CVSkill{有良好的算法和数据结构基础。}
   \CVSkill{熟悉{\redcolor{C}}和{\redcolor{C++}}，有较多{\redcolor{Boost}}和{\redcolor{STL}}使用经验。}
+  \CVSkillIntro{运维方面}
+  \CVSkill{超过三年{\redcolor{Linux}}使用和管理经验，熟悉多个Linux发行版，比较熟悉{\redcolor{Shell Script}}。}
+  \CVSkill{熟练使用{\redcolor{SaltStack}}、{\redcolor{Fabric}}和{\redcolor{Ansible}}进行配置管理。}
+  \CVSkillIntro{软件技能方面}
+  \CVSkill{熟练使用{\redcolor{Git}}}
+  \CVSkill{熟练使用{\redcolor{Vim}}和{\redcolor{Sublime Text}}，熟悉{\redcolor{Vim Script}}。}
+  %\CVSkill{熟悉{\redcolor{Ruby}}和{\redcolor{Perl}}等脚本语言，{\redcolor{Web.py}}、{\redcolor{Rails}}和{\redcolor{Sinatra}}等{\redcolor{DSL}}和框架。}
+  %\CVSkill{熟悉{\redcolor{MarkDown}}、{\redcolor{Textile}}和{\redcolor{Re-StructuredText}}等标记语言，{\redcolor{Sphinx}}等文档生成工具。}
   \CVSkill{熟练使用{\redcolor{\LaTeX{}}}。}
 
   \CVSection{社会经历}
-  \CVAward{参加携程第一届黑客马拉松，获得群众选择奖。}
-  \CVAward{大三下期，在同济大学软件学院课程《Linux程序设计》中，担任助教。}
-  \CVAward{在同济大学Google Camp担任主要负责人，参与组织企业合作。}
   \CVAward{高二上期，参加全国青少年信息学奥林匹克信息大赛，获湖南赛区一等奖及大学保送资格。}
+  \CVAward{在同济大学Google Camp担任主要负责人，参与组织企业合作。}
+  \CVAward{大三下期，在同济大学软件学院课程《Linux程序设计》中，担任助教。}
+  \CVAward{参加携程第一届黑客马拉松，获得群众选择奖。}
   %\CVAward{<++>}
 \EndMinorPage
 
